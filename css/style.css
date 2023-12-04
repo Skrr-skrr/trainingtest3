@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  height: 600px;
+  background: radial-gradient(#aaa, #666, #222);
+  border-radius: 50px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #000;
+  border-radius: 48px;
+}
+
+.inner {
+  position: absolute;
+  inset: 3px;
+  background: #2f3c42;
+  background-size: cover;
+  background-position: center;
+  border-radius: 48px;
+  border: 10px solid #000;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transition: 0.5;
+  transition-delay: 0.2s;
+}
+
+.upper {
+  font-size: 20px;
+  font-weight: 50;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.upper-icons {
+  font-size: 15px;
+  display: flex;
+  gap: 5px;
+  margin-left: 2px;
+  position: absolute;
+  color: black;
+  font-weight: 500;
+  left: 190px;
+  top: 20px;
+}
+.notch {
+  position: absolute;
+  height: 18px;
+  width: 100px;
+  background: black;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.notch:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 50px;
+  margin-left: 25px;
+  margin-top: -10.8px;
+  border-radius: 2px;
+  background: radial-gradient(#ccc, #000, #222);
+}
+
+.notch::before {
+  display: block;
+  content: "";
+  height: 10px;
+  width: 10px;
+  background: radial-gradient(#171589, #000, #222);
+  border-radius: 20px;
+  position: absolute;
+  margin: 1px 0px 0px 10px;
+}
+
+.box:hover .inner {
+  opacity: 1;
+}
+
+.manual {
+  position: absolute;
+  color: yellow;
+  right: 70%;
+  top: 20%;
+  text-align: center;
+}
+
+form input {
+  border: none;
+  background: #2f3c42;
+  color: #fff;
+  position: relative;
+  text-align: right;
+  margin-top: 38%;
+  margin-left: -50px;
+  left: 50px;
+  width: 274px;
+  height: 20%;
+  font-size: 70px;
+}
+
+.buttons {
+  height: 100px;
+  width: 280px;
+  left: 30%;
+  margin-left: -213px;
+  margin-top: 70%;
+  border-radius: 0;
+  padding-bottom: 10px;
+}
+
+.btn-equal {
+  padding-bottom: 4px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: none;
+  background: #ff9f0a;
+  color: #fff;
+  font-weight: 50;
+}
+
+.btn {
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  border: none;
+  background: #343434;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.btn-yellow {
+  background: #ff9f0a;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 50;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.btn-grey {
+  background: #343434;
+  color: #fff;
+  font-size: 33px;
+  font-weight: 50;
+}
+
+.btn-clear {
+  background: #a5a5a5;
+  color: black;
+  font-size: 33px;
+  font-weight: 50;
+}
+
+.btn-special {
+  background: #a5a5a5;
+  color: black;
+  font-size: 33px;
+  font-weight: 50;
+}
+
+.push {
+  width: 47%;
+  color: #fff;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.btn1 {
+  position: absolute;
+  top: 110px;
+  left: -2px;
+  width: 3px;
+  height: 26px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: radial-gradient(#ccc, #666, #222);
+  z-index: 0;
+}
+.btn2 {
+  position: absolute;
+  top: 180px;
+  left: -2px;
+  width: 3px;
+  height: 35px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: radial-gradient(#ccc, #666, #222);
+  z-index: 0;
+}
+
+.btn3 {
+  position: absolute;
+  top: 230px;
+  left: -2px;
+  width: 3px;
+  height: 35px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: radial-gradient(#ccc, #666, #222);
+  z-index: 0;
+}
+
+.btn4 {
+  position: absolute;
+  top: 170px;
+  left: -2px;
+  width: 4px;
+  height: 80px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  padding-left: 4px;
+  margin-left: 300px;
+  background: radial-gradient(#ccc, #666, #222);
+  z-index: 0;
+}
+
+.bar {
+  position: absolute;
+  bottom: 5px;
+  height: 5px;
+  width: 100px;
+  left: 35%;
+  z-index: 102;
+  margin-left: -20px;
+  border-radius: 10px;
+  background-color: white;
+  transform: translateY(-50%);
+}
