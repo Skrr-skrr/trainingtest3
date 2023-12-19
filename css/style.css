@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #000;
+  background: #101227;
 }
 
 .box {
@@ -117,7 +117,7 @@ form input {
   left: 50px;
   width: 274px;
   height: 20%;
-  font-size: 70px;
+  font-size: 63px;
 }
 
 .buttons {
@@ -142,6 +142,7 @@ form input {
   background: #ff9f0a;
   color: #fff;
   font-weight: 50;
+  cursor: pointer;
 }
 
 .btn {
@@ -155,6 +156,7 @@ form input {
   background: #343434;
   color: #fff;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .btn-yellow {
